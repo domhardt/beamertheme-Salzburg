@@ -1,0 +1,29 @@
+% Copyright 2007 by Till Tantau
+% Modified 2021 by Michael Domhardt
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackage{beamerthemeSalzburg}
+  [2021/04/21 v1.0 Salzburg Beamer theme]
+
+\mode<presentation>
+
+\usecolortheme{salzburg}	% A color theme only dictates which colors are used in a presentation.
+%\usefonttheme[⟨options⟩]{⟨name⟩}	% A font theme dictates which fonts or font attributes are used in a presentation.
+\useinnertheme{rectangles}% specifies appearance of blocks, enumerations and other environments inside the frame; options: default/circles/rectangles/rounded/inmargin
+\useoutertheme[subsection=false]{salzburg}% specifies head- and footlines, sidebar, logo, frame title; options: default/infolines/miniframes/smoothbars/sidebar/split/shadow/tree/smoothtree
+
+\setbeamerfont{block title}{size={}}
+\setbeamerfont{subsection in head/foot}{size=\footnotesize}
+
+\setbeamertemplate{navigation symbols}{}% no buttons
+\setbeamertemplate{footline}[frame number]% slide numbers 
+
+\mode
+<all>
+
